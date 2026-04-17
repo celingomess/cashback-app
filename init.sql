@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS cashback_db;
+USE cashback_db;
+
+CREATE TABLE IF NOT EXISTS compras (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    valor_compra DECIMAL(10, 2) NOT NULL,
+    cashback DECIMAL(10, 2) NOT NULL,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
