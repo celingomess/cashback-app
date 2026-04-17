@@ -3,17 +3,21 @@ Questão 1
 
 def calcular_cashback(valor_compra, percentual_cashback, é_vip=False, desconto=0):
 
-  # 1. Aplicar desconto
+   1. Aplicar desconto
+      
   valor_final = valor_compra * (1 - desconto)
 
-  # 2. Cashback base
+   3. Cashback base
+      
   cashback = valor_final * percentual_cashback
 
-  # 3. Regra de promoção (dobro)
+   5. Regra de promoção (dobro)
+      
   if valor_final > 500:
       cashback *= 2
 
-  # 4. Bônus VIP (10% sobre o cashback)
+   7. Bônus VIP (10% sobre o cashback)
+      
   if é_vip:
       cashback *= 1.10
 
